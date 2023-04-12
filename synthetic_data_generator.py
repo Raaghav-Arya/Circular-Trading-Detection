@@ -47,7 +47,7 @@ for i in range(num_transac):
         transac.append((i+1, other_seller, buyer, other_amount, other_date.strftime('%Y-%m-%d')))
 
 # Save the transac as a CSV file
-with open('Data_Files\\Synthetic_Data.csv', 'w', newline='') as csvfile:
+with open('Data_Files\\Synthetic_Data_test.csv', 'w', newline='') as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow(['TransactionID', 'BuyerID', 'SellerID', 'Amount(INR)', 'Date'])
     for transaction in transac:

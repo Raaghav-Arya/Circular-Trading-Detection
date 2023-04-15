@@ -15,7 +15,7 @@ def generate_multidirected_graph_image(trades_df):
     # Plot the graph
     #nodes
     G=graph
-    pos=nx.spring_layout(G)
+    pos=nx.spring_layout(G, seed=5)
     fig, ax = plt.subplots()
     nx.draw_networkx_nodes(G, pos, ax=ax)
     nx.draw_networkx_labels(G, pos, ax=ax)
